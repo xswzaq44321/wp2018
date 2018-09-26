@@ -1,4 +1,81 @@
-p{
+body{
+    background-image: url("https://i.imgur.com/JpIDbEc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sidenav{
+    height: calc(100% - 150px);
+    width: 50px;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity:1;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 50px;
+    margin-top: 100px;
+    transition: 0.5s;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #333;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover{
+    background-color: #444;
     color: white;
-    background-color: gray;
+}
+
+.sidenav a:active{
+    background-color: #ffa980;
+    color: white;
+}
+
+.sidenav .closebtn{
+    padding: 0px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 36px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 50px;
+    top: 0px;
+    height: calc(100% - 150px);
+    width: 400px;
+    margin-top: 100px;
+    /* padding-top: 50px; */
+    border-top: solid;
+    border-top-width: 50px;
+    border-top-color: whitesmoke;
+    border-left: solid;
+    border-left-width: 1px;
+    border-left-color: rgb(206, 206, 206);
+    background-color: whitesmoke;
+    overflow-y: scroll;
+}
+
+.flex-container > *{
+    border-bottom: solid 2px #777777;
+    margin: 10px 5px 10px 5px;
+}
+
+.flex-container p{
+    white-space: pre-wrap;
 }
